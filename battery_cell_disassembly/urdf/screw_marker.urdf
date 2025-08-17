@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<robot name="screw_marker">
+
+  <link name="base_ref"/>
+
+  <joint name="joint_screw_1" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_1"/>
+    <origin xyz="0.54030 -0.39979 -0.02572" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_2" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_2"/>
+    <origin xyz="0.54208 -0.32186 -0.02658" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_3" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_3"/>
+    <origin xyz="0.54398 -0.00911 -0.02923" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_4" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_4"/>
+    <origin xyz="0.54699 0.07273 -0.02989" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_4">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_5" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_5"/>
+    <origin xyz="0.80003 -0.32366 -0.02082" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_5">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_6" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_6"/>
+    <origin xyz="0.80174 -0.01162 -0.02325" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_6">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_7" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_7"/>
+    <origin xyz="0.80499 0.06820 -0.02382" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_7">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_8" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_8"/>
+    <origin xyz="0.80801 0.37997 -0.02691" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_8">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_9" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_9"/>
+    <origin xyz="0.84332 -0.32082 -0.02052" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_9">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_10" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_10"/>
+    <origin xyz="0.84389 -0.00931 -0.02190" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_10">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_11" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_11"/>
+    <origin xyz="0.84931 0.06998 -0.02236" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_11">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_12" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_12"/>
+    <origin xyz="0.84815 0.38309 -0.02345" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_12">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_13" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_13"/>
+    <origin xyz="1.09777 -0.40050 -0.01683" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_13">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_14" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_14"/>
+    <origin xyz="1.10140 -0.32421 -0.01509" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_14">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_15" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_15"/>
+    <origin xyz="1.10254 -0.01245 -0.01637" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_15">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_screw_16" type="fixed">
+    <parent link="base_ref"/>
+    <child link="screw_16"/>
+    <origin xyz="1.10588 0.06651 -0.01650" rpy="0 0 0"/>
+  </joint>
+
+  <link name="screw_16">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+</robot>

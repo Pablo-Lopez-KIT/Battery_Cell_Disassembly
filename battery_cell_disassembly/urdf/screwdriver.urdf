@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<robot name="screwdriver_tool">
+
+  <link name="tool_link">
+    <visual>
+      <origin xyz="0 0 0.012" rpy="-1.5708 0 0"/>
+      <geometry>
+        <mesh filename="meshes/screwdriver_tool2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.6 0.6 0.6 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 -0.003 0.012" rpy="-1.5708 0 0"/>
+      <geometry>
+        <mesh filename="meshes/screwdriver_tool_collision.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.012" rpy="-1.5708 0 0"/>
+      <geometry>
+        <mesh filename="meshes/collision2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0"
+               iyy="0.001" iyz="0.0"
+               izz="0.001"/>
+    </inertial>
+  </link>
+
+
+  <joint name="tool_joint" type="fixed">
+    <parent link="tool_link"/>
+    <child link="tcp_link"/>
+    <origin xyz="0.12102 -0.0937 -0.0188" rpy="0 0 0"/>
+  </joint>
+
+  <link name="tcp_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="tool_joint2" type="fixed">
+    <parent link="tool_link"/>
+    <child link="tcp2_link"/>
+    <origin xyz="0 0 0.18" rpy="0 0 0"/>
+  </joint>
+
+  <link name="tcp2_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.008"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

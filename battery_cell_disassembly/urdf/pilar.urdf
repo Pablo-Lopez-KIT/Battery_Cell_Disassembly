@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<robot name="pilar">
+
+  <link name="pilar_link">
+
+    <!-- Pilar 1 -->
+    <visual>
+      <origin xyz="0.42805 -0.40929 -0.00772" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <!--
+    <collision>
+      <origin xyz="0.42805 -0.40929 -0.00772" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    -->
+
+    <!-- Pilar 2 -->
+    <visual>
+      <origin xyz="0.43081 0.27010 -0.00895" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <!--
+    <collision>
+      <origin xyz="0.43081 0.27010 -0.00895" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    -->
+
+    <!-- Pilar 3 -->
+    <visual>
+      <origin xyz="1.22504 -0.49757 -0.00711" rpy="0 0 3.1416"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <!--
+    <collision>
+      <origin xyz="1.22504 -0.49757 -0.00711" rpy="0 0 3.1416"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    -->
+
+    <!-- Pilar 4 -->
+    <visual>
+      <origin xyz="1.22247 0.17285 -0.00161" rpy="0 0 3.1416"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <!--
+    <collision>
+      <origin xyz="1.22247 0.17285 -0.00161" rpy="0 0 3.1416"/>
+      <geometry>
+        <mesh filename="meshes/pilar.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    -->
+
+    <!-- Inertial block  -->
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+
+  </link>
+
+</robot>
